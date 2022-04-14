@@ -682,6 +682,146 @@ nav ul a:hover {
 	margin: 15px;
 }
 
+/* ekip sex */
+
+#ekip *:focus,
+*:active,
+*:visited {
+	outline: none;
+}
+
+.tarkikComandSlider {
+	width: 1100px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: -45px;
+	display: block;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.slick-dots li button {
+	display: none;
+}
+
+.slick-dots li:before {
+	top: 1px;
+	transition: all 0.5s;
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: #ffffff;
+	position: absolute;
+}
+
+.slick-dots li.slick-active:before {
+	top: 0;
+	width: 8px;
+	height: 8px;
+	margin-left: -2px;
+	background-color: #964848;
+}
+
+.slick-prev {
+	left: 0;
+	transform: rotate(180deg);
+}
+
+.slick-next {
+	right: 0;
+}
+
+.slick-arrow {
+	top: 50%;
+	height: 26px;
+	width: 14px;
+	margin-top: -13px;
+	position: absolute;
+	font-size: 0;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+	background-repeat: no-repeat;
+}
+
+.comandSlider__item {
+	transition: box-shadow 2s;
+	cursor: pointer;
+	position: relative;
+	background-color: #344c65;
+	margin: 0 10px;
+	padding: 100px;
+	box-shadow: inset -141px -129px 200px rgba(0, 0, 0, 0.25);
+}
+
+.comandSlider__item:hover {
+	box-shadow: inset 141px 129px 200px rgba(0, 0, 0, 0.25);
+}
+
+.comandSlider__item_name {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	color: #3eaef2;
+	margin: 0;
+	margin-bottom: 7px;
+}
+
+.comandSlider__item_status {
+	margin: 0;
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 80px;
+}
+
+.comandSlider__item_sendMail {
+	width: 25px;
+	height: 20px;
+	position: absolute;
+	background-image: url(https://tarkikromanski.github.io/files/mail-ico.png);
+	top: 34px;
+	right: 30px;
+}
+
+.comandSlider__item_photo {
+	max-width: 150px;
+	max-height: 150px;
+	margin: auto;
+	margin-bottom: 54px;
+}
+
+.comandSlider__item_contact {
+	font-size: 12px;
+	color: #fff;
+	margin: 2px;
+}
+
+.comandSlider__item_contact span {
+	color: #3eaef2;
+	font-weight: 700;
+	margin-right: 5px;
+}
 
 /* Kıç
 ********************************************************************* */
