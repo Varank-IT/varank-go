@@ -608,13 +608,18 @@ nav ul a:hover {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+.accordion_container {
+	width: 100%;
+}
+
 .accordion {
-	width: 1000px;
-	/* Horizontally and vertically centering the accordion */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	/* width: 1000px; */
+	/* if you want to have a specific width 
+	use relative widths to have it work on high and low res
+	do refactor the section widths though if you want to use this */
+	/* width: 60vw; */
+
+	margin: 0 auto; /* just center horizontally */
 }
 
 .accordion__collapsible {
