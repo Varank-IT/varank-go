@@ -35,3 +35,7 @@ I CAN'T TAKE IT ANYMORE  ̡ ҉ ҉.·๑ ̡ ҉ ҉.·๑ඕั ҉ ̸ ̡ ҉ ҉.·�
 
 # VUE
 727 WYSI CRUMB
+
+# about Crum
+
+That folder has bunch of vue stuff that we were gonna use but we didn't because who cared
