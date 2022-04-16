@@ -11,7 +11,9 @@ body {
 	line-height: 1.6;
 	font-weight: 400;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	color: #222;
+	/* color: #222; */
+	color: #eee;
+	background-color: rgb(20, 20, 20);
 }
 
 /* Grid
@@ -296,10 +298,13 @@ header {
 	width: 100%;
 	height: 100vh;
 	background: #e55d87;
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	/* background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
 	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%); */
+	background: -moz-linear-gradient(-45deg, rgb(38, 22, 47) 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, rgb(38, 22, 47) 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, rgb(38, 22, 47) 0%, #5fc3e4 100%);
+	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1); */
 }
 
 .title {
@@ -312,7 +317,8 @@ header {
 }
 
 .title .smallsep {
-	background: #fff;
+	/* background: #fff; */
+	background: rgb(20, 20, 20);
 	height: 2px;
 	width: 70px;
 	margin: auto;
@@ -390,7 +396,8 @@ header {
 }
 
 .sticky {
-	background-color: #ffffff;
+	/* background-color: #CFCFCF; */
+	background-color: rgb(38, 22, 47);
 	opacity: 1;
 	top: 0px;
 }
@@ -498,7 +505,7 @@ nav ul a:hover {
 }
 
 
-/*kaydırma animasyonu*/
+/*scrollin animation*/
 @-webkit-keyframes fade_move_down {
 	0% {
 		-webkit-transform: translate(0, -10px) rotate(45deg);
@@ -641,7 +648,8 @@ nav ul a:hover {
 }
 
 .collapsible__header {
-	background-color: rgb(243, 242, 242);
+	/* background-color: rgb(243, 242, 242); */
+	background-color: rgb(20, 20, 20);
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
@@ -823,15 +831,57 @@ nav ul a:hover {
 	margin-right: 5px;
 }
 
+/* Takımlar */
+#teams .container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#teams .container:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.container figure {
+	width: 31%;
+	margin: 0.5em;
+	margin-left: 0;
+	float: left;
+}
+
+img {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+
+@media screen and (max-width: 850px) {
+	.container figure {
+		width: 48%;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.container figure {
+		width: 100%;
+	}
+}
+
 /* Kıç
-********************************************************************* */
+******************************** ************************************* */
 footer {
 	min-height: 120px;
 	padding: 40px 0 40px 0;
 	background: #e55d87;
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	/* background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
 	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
 	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1); */
+	background: -moz-linear-gradient(-45deg, rgb(38, 22, 47) 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, rgb(38, 22, 47) 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, rgb(38, 22, 47) 0%, #5fc3e4 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1);
 	box-sizing: border-box;
 }
@@ -842,6 +892,7 @@ footer p {
 }
 
 .socialIcons {
+	float: right;
 	font-size: 34px;
 	color: rgba(255, 255, 255, 0.7);
 }

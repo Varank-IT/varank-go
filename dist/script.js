@@ -6,7 +6,7 @@ Array.from(collapsibleHeaders).forEach(header => {
     });
 });
 
-$('.tarkikComandSlider').slick({
+$('.tarkikComandSlider').click({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -18,13 +18,13 @@ $('.tarkikComandSlider').slick({
 /* Quote Loop
 ------------------------------------------------------ */
 
-function fade($ele) {
-    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function () {
-        var $next = $(this).next('.quote');
-        fade($next.length > 0 ? $next : $(this).parent().children().first());
-    });
-}
-fade($('.quoteLoop > .quote').first()); //bunu çaldım
+// function fade($ele) {
+//     $ele.fadeIn(1000).delay(3000).fadeOut(1000, function () {
+//         var $next = $(this).next('.quote');
+//         fade($next.length > 0 ? $next : $(this).parent().children().first());
+//     });
+// }
+// fade($('.quoteLoop > .quote').first()); //bunu çaldım
 
 
 /*----------------------------------------------------*/
@@ -55,8 +55,6 @@ $('.main_nav li a').click(function () {
         $('.main_nav').removeClass('open-nav');
     }
 }); //denemedim umrumda da değil
-
-
 
 
 jQuery(document).ready(function ($) {
