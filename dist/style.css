@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 
+
 /* Ana Stil
 ********************************************************************* */
 html {
@@ -504,6 +505,24 @@ nav ul a:hover {
 	animation: fade_move_down 2s ease-in-out infinite;
 }
 
+button {
+	margin: 70px auto;
+	display: block;
+	padding: 15px 35px;
+	border: none;
+	background: #509bc3;
+	border-radius: 30px;
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #fff;
+	transition: 0.3s ease-in-out;
+}
+
+button:hover {
+	background: #5fc3e4;
+	color: #fff;
+	cursor: pointer;
+}
 
 /*scrollin animation*/
 @-webkit-keyframes fade_move_down {
